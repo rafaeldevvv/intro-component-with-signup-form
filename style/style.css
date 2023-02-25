@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Chakra+Petch:wght@300;400;500;600&family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Open+Sans:ital@0;1&family=Orbitron:wght@400;500;600;700;800;900&family=Play:wght@400;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Press+Start+2P&family=Rajdhani:wght@500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=VT323&display=swap");
+/* #######general styling############ */
 * {
   padding: 0;
   margin: 0;
@@ -7,10 +8,120 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  padding: 6em 1.5em;
   min-height: 100vh;
-  padding: 3em;
+  background: url("../images/bg-intro-mobile.png"), hsl(0, 100%, 74%);
+  color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* ################ Utility classes ##################### */
+.flex {
+  display: flex;
+}
+
+.warning-box {
+  background: hsl(248, 32%, 49%);
+  padding: 1.3em 4em;
+  border-radius: 10px;
+  box-shadow: 0 7px 0 0 rgba(0, 0, 0, 0.2);
+  line-height: 1.7;
+  font-size: 0.9em;
+}
+
+.mb-sm {
+  margin-bottom: 1em;
+}
+
+.mb-md {
+  margin-bottom: 2em;
+}
+
+.mb-bg {
+  margin-bottom: 3em;
+}
+
+.form-field {
+  display: block;
+  width: 100%;
+  padding: 1.2em 3em 1.2em 1.2em;
+  outline: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.form-field::-moz-placeholder {
+  font-weight: 700;
+}
+
+.form-field::placeholder {
+  font-weight: 700;
+}
+
+.btn {
+  background: 0;
+  border: 0;
+  outline: 0;
+  padding: 1.2em 0;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+.primary-btn {
+  color: white;
+  background-color: hsl(154, 59%, 51%);
+  box-shadow: 0 -5px rgba(0, 0, 0, 0.1) inset;
+}
+
+/* ###########wrapper################ */
+#wrapper {
+  text-align: center;
+  flex-direction: column;
+  gap: 4em;
+}
+
+/* ######left######## */
+#left h1 {
+  font-size: 1.7em;
+  line-height: 1.3;
+}
+#left p {
+  line-height: 1.7;
+}
+
+/* #########right######## */
+#right form {
+  background: white;
+  padding: 1.5em;
+  flex-direction: column;
+  gap: 1em;
+  border-radius: 10px;
+}
+#right form footer {
+  font-size: 0.7em;
+  color: hsl(246, 25%, 77%);
+  width: 90%;
+  margin-inline: auto;
+}
+
+/* ###### footer ####### */
+#main-footer {
+  text-align: center;
+  margin-top: 2em;
+}
+#main-footer a {
+  color: hsl(154, 59%, 51%);
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
