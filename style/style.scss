@@ -17,7 +17,8 @@ body {
    font-family: "Poppins", sans-serif;
    padding: 6em 1.5em;
    min-height: 100vh;
-   background: url('../images/bg-intro-mobile.png'), $red;
+   background-color: $red;
+   background-image: url('../images/bg-intro-mobile.png');
    color: white;
 
    display: flex;
@@ -193,7 +194,7 @@ a {
 
 @media (min-width: 40em) {
    body {
-      background: url('../images/bg-intro-desktop.png'), $red;
+      background-image: url('../images/bg-intro-desktop.png');
    }
 
    #wrapper {
