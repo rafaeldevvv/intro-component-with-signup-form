@@ -157,6 +157,7 @@ a {
   border-radius: 10px;
   flex-direction: column;
   gap: 1em;
+  box-shadow: 0 7px 0 0 rgba(0, 0, 0, 0.2);
 }
 #right form .error-message {
   margin-top: 0.5em;
