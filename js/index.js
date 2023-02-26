@@ -8,7 +8,7 @@ document.querySelector("form").onsubmit = (e) => {
   for (let child of Array.from(e.target.elements)) {
     if (child.nodeName != "INPUT") continue;
 
-    okay = child.value;
+    okay = child.value.trim();
 
     child.nextSibling.textContent = okay
       ? ""
