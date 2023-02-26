@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [here](https://github.com/rafaeldevvv/intro-component-with-signup-form)
+- Live Site URL: [click here](https://rafaeldevvv.github.io/intro-component-with-signup-form/)
 
 ## My process
 
@@ -54,8 +54,7 @@ In this part, the paragraph has to be together with the input field, because DOM
     autofocus
     placeholder="First Name"
     class="form-field"
-  />
-  <p class="error-message"></p>
+  /><p class="error-message"></p>
 </div>
 ```
 
@@ -84,6 +83,8 @@ I think this animation is pretty nice.
 ### Continued development
 
 I want to continue improving my ability to create utility classes. I think these make the code shorter and easier to read.
+
+I think I did a pretty good job this time. I liked the final code.
 
 ### Useful resources
 
