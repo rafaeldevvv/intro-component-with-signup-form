@@ -61,7 +61,7 @@ a {
 .form-field {
    display: block;
    width: 100%;
-   padding: 1.2em 3em 1.2em 1.2em;
+   padding: 1.2em 20% 1.2em 1.2em;
 
    outline: 0;
 
@@ -72,6 +72,41 @@ a {
 }
 .form-field::placeholder {
    font-weight: 700;
+}
+.failure {
+   border-color: $red;
+   
+   background-image: url("../images/icon-error.svg");
+   background-position: 95% 50%;
+   background-repeat: no-repeat;
+   
+   animation: swing .3s linear;
+}
+@keyframes swing {
+   0% {
+      transform: translateX(0px);
+   }
+   25% {
+      transform: translateX(-25px);
+   }
+   50% {
+      transform: translateX(25px);
+   }
+   75% {
+      transform: translateX(-25px);
+   }
+   100% {
+      transform: translateX(0px);
+   }
+}
+.success {
+   border-color: $green;
+}
+
+.error-message {
+   color: $red;
+   font-size: .7em;
+   text-align: right;
 }
 
 .btn {
@@ -131,6 +166,10 @@ a {
 
       flex-direction: column;
       gap: 1em;
+
+      .error-message {
+         margin-top: .5em;
+      }
 
       footer {
          font-size: 0.7em;
