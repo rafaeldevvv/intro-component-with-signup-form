@@ -10,7 +10,8 @@ body {
   font-family: "Poppins", sans-serif;
   padding: 6em 1.5em;
   min-height: 100vh;
-  background: url("../images/bg-intro-mobile.png"), hsl(0, 100%, 74%);
+  background-color: hsl(0, 100%, 74%);
+  background-image: url("../images/bg-intro-mobile.png");
   color: white;
   display: flex;
   flex-direction: column;
@@ -174,7 +175,7 @@ a {
 
 @media (min-width: 40em) {
   body {
-    background: url("../images/bg-intro-desktop.png"), hsl(0, 100%, 74%);
+    background-image: url("../images/bg-intro-desktop.png");
   }
   #wrapper {
     text-align: left;
