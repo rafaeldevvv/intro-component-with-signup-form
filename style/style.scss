@@ -70,6 +70,11 @@ a {
    border-radius: 5px;
    
    font-weight: 600;
+
+   transition: .3s border-color;
+}
+.form-field:focus {
+   border-color: $dark-blue;
 }
 .form-field::placeholder {
    font-weight: 700;
