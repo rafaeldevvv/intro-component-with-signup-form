@@ -25,7 +25,9 @@ document.querySelector("form").onsubmit = (e) => {
 
   emailField.nextSibling.textContent = okay
     ? ""
-    : "It looks like an invalid email";
+    : email == ""
+    ? "Email cannot be empty"
+    : "Looks like this is not an email";
 
   emailField.classList.add(okay ? "success" : "failure");
   emailField.classList.remove(okay ? "failure" : "success");
