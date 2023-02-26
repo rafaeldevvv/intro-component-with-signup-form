@@ -77,12 +77,17 @@ a {
   text-transform: uppercase;
   font-size: 0.9em;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .primary-btn {
   color: white;
   background-color: hsl(154, 59%, 51%);
   box-shadow: 0 -5px rgba(0, 0, 0, 0.1) inset;
+}
+
+.primary-btn:hover {
+  filter: brightness(1.2);
 }
 
 /* ###########wrapper################ */
